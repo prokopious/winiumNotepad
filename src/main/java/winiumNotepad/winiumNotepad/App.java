@@ -20,6 +20,8 @@ public class App {
 	
 		driver.findElement(By.name("Notepad")).click();
 		Thread.sleep(5000);
+		driver.findElement(By.name("Notepad")).sendKeys("hello world");
+		Thread.sleep(15000);
 		
 		driver.quit();
 	}
